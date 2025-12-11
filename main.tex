@@ -1,59 +1,134 @@
-%%
-% This is an Overleaf template for scientific articles and reports
-% using the TUM Corporate Desing https://www.tum.de/cd
-%
-% For further details on how to use the template, take a look at our
-% GitLab repository and browse through our test documents
-% https://gitlab.lrz.de/latex4ei/tum-templates.
-%
-% The tumarticle class is based on the KOMA-Script class scrartcl.
-% If you need further customization please consult the KOMA-Script guide
-% https://ctan.org/pkg/koma-script.
-% Additional class options are passed down to the base class.
-%
-% If you encounter any bugs or undesired behaviour, please raise an issue
-% in our GitLab repository
-% https://gitlab.lrz.de/latex4ei/tum-templates/issues
-% and provide a description and minimal working example of your problem.
-%%
-
 \documentclass[
-  english, % define the document language (english, german)
-  font=times, % define main text font (helvet, times, palatino, libertine)
-  twocolumn, % use onecolumn or twocolumn layout
+  english,
+  font=times,
+  twocolumn,
 ]{tumarticle}
 
-% load additional packages
-\usepackage{lipsum}
+\usepackage{cite} % Use cite package for standard bibtex
 
-% article metadata
-\title{Sparse Crosscoders}
-\subtitle{Subtitle of the article}
+\title{Disentangling and Interpreting ProtT5 using Sparse Crosscoders}
+\subtitle{Guided Research Exposé}
 
-\author[affil=1, orcid=0000-0003-1146-2238, email=sohrab.tawana@tum.de]{Sohrab
-Tawana}
+\author[affil=1, orcid=0000-0003-1146-2238, email=sohrab.tawana@tum.de]{Sohrab Tawana}
 
 \affil[mark=1]{\theDepartmentName, \theUniversityName}
 
-\date{December 8, 2025}
+\date{\today}
 
 \begin{document}
   \maketitle
 
   \begin{abstract}
-    This is a short abstract summarizing the main points of your article.
+    Protein Language Models (PLMs) like ProtT5 drive state-of-the-art performance in biology but remain opaque "black boxes".
+    While their embeddings are useful, the rich biological knowledge they have likely acquired such as rules governing stability, 
+    binding, and function remains locked within their weights. This research aims to ask: Can Sparse Crosscoders effectively 
+    disentangle interpretable features from the internal representation of the ProtT5 encoder to provide mechanistic insight? 
+    We propose training a Sparse Crosscoder on the hidden states of all layers of the ProtT5 encoder. 
+    This architecture learns a shared dictionary of features, allowing us to interpret how biological concepts are represented 
+    and manipulated throughout the network. The expected result is a set of interpretable features that can be used to understand 
+    the model's internal logic, potentially shedding light into the features that the ProtT5 encoder extracts from the protein sequences
+    it sees. As a use case, we will explore using the Crosscoder as a surrogate model within a ProteusAI-style evolutionary loop. 
+    Instead of a traditional surrogate classifier predicting fitness, our Crosscoder can directly measure the activation of desirable 
+    "feature circuits" (e.g., binding site integrity) to guide the selection of best-fitting protein sequences during evolution.
   \end{abstract}
 
   \section{Introduction}
-  \lipsum[1]
-  \subsection{First subsection}
-  \lipsum[2]
-  \subsection{Second subsection}
-  \lipsum[3]
+  \textbf{Topic:} Mechanistic interpretability of large Protein Language Models (PLMs).
+  
+  \textbf{Focus:} The encoder of ProtT5 (fine-tuned for downstream tasks), specifically analyzing \textbf{all layers}.
+  
+  \textbf{Relevance/Problem:} PLMs capture evolutionary patterns, but standard linear probes often fail to disentangle causal features 
+  from correlated confounds. Sparse Autoencoders (SAEs) have shown promise (InterPLM, SAEFold) in isolating distinct features.
+  
+  \textbf{Specific Gap:} Training independent SAEs for every layer is inefficient and doesn't explicitly model the shared nature of 
+  features across depth.
+  
+  \textbf{Approach:} We will apply \textbf{Sparse Crosscoders} \cite{lindsey_sparse_2024}. By training a single shared dictionary 
+  across all layers, we can interpret features more robustly. We aim to use these features not just for observation, but to guide 
+  inputs---enabling interpretable steerability for biological design (directed evolution).
+
+  \section{State of the Art of Research}
+  \subsection{Protein Language Models (PLMs)}
+  ProtT5 (trained on BFD + UniRef50) is a standard for per-residue prediction and embedding generation \cite{elnaggar_prottrans_2020}.
+
+  \subsection{SAEs in Biology}
+  \begin{itemize}
+      \item \textit{InterPLM} \cite{simon_interplm_2025} \& \textit{InterProt} \cite{adams_2025_interprot}: Applied standard SAEs to 
+      ESM-2, validating that latent directions correspond to active sites, domains, and functional properties.
+      \item \textit{SAEFold} \cite{parsan2025towardsinterpretableproteinstructureprediction}: Applied to structure prediction models.
+  \end{itemize}
+
+  \subsection{Crosscoders (The Novelty)}
+  Recent work by Anthropic ("Sparse Crosscoders") demonstrates superior efficiency and interpretability for cross-layer analysis 
+  compared to independent SAEs \cite{lindsey_sparse_2024}.
+  
+  \textbf{Novelty:} To our knowledge, Sparse Crosscoders have \textbf{not yet been applied to any PLM}. This project would be the 
+  first to transfer this architecture to the protein domain.
 
   \section{Methods}
-  \lipsum[4-5]
+  \subsection{Model}
+  ProtT5-XL-U50 (Encoder only). We will extract and analyze hidden states from \textbf{all layers}.
 
-  \section{Outlook}
-  \lipsum[6]
+  \subsection{Architecture: Sparse Crosscoder}
+  \begin{itemize}
+      \item \textit{Input:} Hidden states from all $N$ layers defined as a unified input vector or batched appropriately.
+      \item \textit{Loss Function:} We will use the \textbf{L2-of-norms} loss. Unlike the L1 version used for direct baseline 
+      comparisons, utilizing L2 more efficiently optimizes the frontier of MSE and global sparsity, encouraging the model to 
+      find the most efficient shared features without explicit constraints to match per-layer SAE formulations.
+      \item \textit{State:} We will target the residual stream or full layer states, following the protocol of reference 
+      crosscoder literature.
+  \end{itemize}
+
+  \subsection{Dataset}
+  \textbf{Target:} $\sim$10 million protein sequences primarily from \textbf{UniRef50}, potentially augmented with a significant 
+  portion of \textbf{BFD} (Big Fantastic Database).
+  
+  \textbf{Rationale:} This mix aims to mimic the original pre-training data distribution of ProtT5 (which used BFD for pre-training 
+  and UniRef50 for fine-tuning), ensuring the features we discover are ``native'' to the model's learned representation.
+
+  \subsection{Analysis \& Evaluation}
+  \begin{itemize}
+      \item \textbf{Automated Interpretation:} Use LLMs to annotate features based on maximizing sequences.
+      \item \textbf{Biological Validation:} Cross-reference active features with UniProt annotations.
+      \item \textbf{In-Silico Directed Evolution (ProteusAI Integration):} We will explore using the Crosscoder as a 
+      \textbf{surrogate model} within a ProteusAI-style evolutionary loop. Instead of a traditional surrogate classifier 
+      predicting fitness, our Crosscoder can directly measure the activation of desirable "feature circuits" 
+      (e.g., binding site integrity) to guide the selection of best-fitting protein sequences during evolution.
+  \end{itemize}
+
+  \section{Preliminary Work}
+  \subsection{Infrastructure}
+  \begin{itemize}
+      \item Setup of the core \texttt{crosscoder} training codebase (based on Anthropic/open-source implementations).
+      \item Configuration of ProtT5 inference pipelines for large-scale hidden state extraction.
+  \end{itemize}
+
+  \section{Work Plan and Time Schedule}
+  \textit{(3-Month Guided Research Project)}
+
+  \subsection{Month 1: Implementation \& Data}
+  \begin{itemize}
+      \item Prepare the training dataset (UniRef50 and possibly BFD).
+      \item Extract hidden states from all layers of ProtT5.
+      \item Implement the Sparse Crosscoder architecture with L2-of-norms loss.
+  \end{itemize}
+
+  \subsection{Month 2: Training \& Interpretation}
+  \begin{itemize}
+      \item Train the Crosscoder (tuning expansion factor and sparsity penalty).
+      \item Generate automated interpretations and map to biological databases.
+  \end{itemize}
+
+  \subsection{Month 3: Application \& Reporting (Optional Paths)}
+  \begin{itemize}
+      \item \textit{Option A (Directed Evolution):} Investigate using features to manually guide specific mutations 
+      (``restricted wet-lab in silico'').
+      \item \textit{Option B (ProteusAI):} Implement the Crosscoder as a surrogate model in ProteusAI to drive automated 
+      sequence optimization.
+      \item Finalize the exposé/report.
+  \end{itemize}
+
+  \bibliographystyle{plain}
+  \bibliography{references}
+
 \end{document}

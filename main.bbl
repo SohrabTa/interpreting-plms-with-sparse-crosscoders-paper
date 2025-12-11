@@ -1,0 +1,26 @@
+\begin{thebibliography}{1}
+
+\bibitem{adams_2025_interprot}
+Etowah Adams, Liam Bai, Minji Lee, Yiyang Yu, and Mohammed AlQuraishi.
+\newblock From mechanistic interpretability to mechanistic biology: Training, evaluating, and interpreting sparse autoencoders on protein language models.
+\newblock {\em bioRxiv}, 2025.
+
+\bibitem{elnaggar_prottrans_2020}
+Ahmed Elnaggar, Michael Heinzinger, Christian Dallago, Ghalia Rehawi, Yu~Wang, Llion Jones, Tom Gibbs, Tamas Feher, Christoph Angerer, Martin Steinegger, Debsindhu Bhowmik, and Burkhard Rost.
+\newblock Prottrans: Toward understanding the language of life through self-supervised learning.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence}, 44(10):7112--7127, Oct 2022.
+
+\bibitem{lindsey_sparse_2024}
+Jack Lindsey, Adly Templeton, Jonathan Marcus, Thomas Conerly, Joshua Batson, and Christopher Olah.
+\newblock Sparse crosscoders for cross-layer features and model diffing.
+
+\bibitem{parsan2025towardsinterpretableproteinstructureprediction}
+Nithin Parsan, David~J. Yang, and John~J. Yang.
+\newblock Towards interpretable protein structure prediction with sparse autoencoders, 2025.
+
+\bibitem{simon_interplm_2025}
+Elana Simon and James Zou.
+\newblock {InterPLM}: discovering interpretable features in protein language models via sparse autoencoders.
+\newblock {\em Nature Methods}, 22(10):2107--2117, 2025.
+
+\end{thebibliography}

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.11)  11 DEC 2025 21:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.11)  11 DEC 2025 22:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/sohrab/pCloudDrive/My Cloud/1 - Projects/Uni/04-25-26-ws/guided_research/interpreting_PLMs_with_SAEs/guided_research/main.tex"
-(/home/sohrab/pCloudDrive/My Cloud/1 - Projects/Uni/04-25-26-ws/guided_research/interpreting_PLMs_with_SAEs/guided_research/main.tex
+**/home/sohrab/guided_research/main.tex
+(/home/sohrab/guided_research/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (./tum/tumarticle.cls
@@ -961,20 +961,17 @@ Package: tumuser 2021/04/19 v2.0
 )
 Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 183.
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 183.
-) (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
+) (/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
 )
-Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count348
-\l__lipsum_a_int=\count349
-\l__lipsum_b_int=\count350
- (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
-LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line 40.
+LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line 18.
  (/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
 File: t1ntxtlf.fd 2021/05/24 v1.1 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 40.
+(Font)              scaled to size 10.95pt on input line 18.
 
 
 LaTeX Warning: Unused global option(s):
@@ -983,65 +980,65 @@ LaTeX Warning: Unused global option(s):
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 40.
-LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 40.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 18.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 18.
  (/usr/share/texlive/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 40.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 40.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 18.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 18.
  (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 40.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 40.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 18.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 18.
  (/usr/share/texlive/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 40.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 40.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 18.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 18.
  (/usr/share/texlive/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 40.
-Package scrbase Info: activating english \abstractname on input line 40.
-Package scrbase Info: activating english \partname on input line 40.
-Package scrbase Info: activating english \figurename on input line 40.
-Package scrbase Info: activating english \tablename on input line 40.
-Package scrbase Info: activating english \contentsname on input line 40.
-Package scrbase Info: activating english \listfigurename on input line 40.
-Package scrbase Info: activating english \listtablename on input line 40.
-Package scrbase Info: activating english \refname on input line 40.
-Package scrbase Info: activating english \indexname on input line 40.
+LaTeX Font Info:    ... okay on input line 18.
+Package scrbase Info: activating english \abstractname on input line 18.
+Package scrbase Info: activating english \partname on input line 18.
+Package scrbase Info: activating english \figurename on input line 18.
+Package scrbase Info: activating english \tablename on input line 18.
+Package scrbase Info: activating english \contentsname on input line 18.
+Package scrbase Info: activating english \listfigurename on input line 18.
+Package scrbase Info: activating english \listtablename on input line 18.
+Package scrbase Info: activating english \refname on input line 18.
+Package scrbase Info: activating english \indexname on input line 18.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count351
+\scratchcounter=\count348
 \scratchdimen=\dimen298
 \scratchbox=\box82
-\nofMPsegments=\count352
-\nofMParguments=\count353
+\nofMPsegments=\count349
+\nofMParguments=\count350
 \everyMPshowfont=\toks57
-\MPscratchCnt=\count354
+\MPscratchCnt=\count351
 \MPscratchDim=\dimen299
-\MPnumerator=\count355
-\makeMPintoPDFobject=\count356
+\MPnumerator=\count352
+\makeMPintoPDFobject=\count353
 \everyMPtoPDFconversion=\toks58
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1049,7 +1046,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 40.
+Package hyperref Info: Link coloring OFF on input line 18.
  (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -1061,12 +1058,12 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 40.
+(scrartcl)           before \begin{document} on input line 18.
  (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
-\BKM@id=\count357
+\BKM@id=\count354
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
@@ -1105,77 +1102,89 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@mv@tabular=\count358
-\c@mv@boldtabular=\count359
-LaTeX Info: Command `\dddot' is already robust on input line 40.
-LaTeX Info: Command `\ddddot' is already robust on input line 40.
-LaTeX Font Info:    Trying to load font information for T1+qhv on input line 42.
+\c@mv@tabular=\count355
+\c@mv@boldtabular=\count356
+LaTeX Info: Command `\dddot' is already robust on input line 18.
+LaTeX Info: Command `\ddddot' is already robust on input line 18.
+LaTeX Font Info:    Trying to load font information for T1+qhv on input line 20.
 (/usr/share/texmf/tex/latex/tex-gyre/t1qhv.fd
 File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 )
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 10.29301pt on input line 42.
+(Font)              scaled to size 10.29301pt on input line 20.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 16.24324pt on input line 42.
+(Font)              scaled to size 16.24324pt on input line 20.
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 16.24324pt on input line 42.
+(Font)              scaled to size 16.24324pt on input line 20.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 11.28003pt on input line 42.
+(Font)              scaled to size 11.28003pt on input line 20.
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 11.28003pt on input line 42.
+(Font)              scaled to size 11.28003pt on input line 20.
 <resources/orcid.pdf, id=8, 205.56801pt x 205.56801pt>
 File: resources/orcid.pdf Graphic file (type pdf)
 <use resources/orcid.pdf>
-Package pdftex.def Info: resources/orcid.pdf  used on input line 42.
+Package pdftex.def Info: resources/orcid.pdf  used on input line 20.
 (pdftex.def)             Requested size: 8.20563pt x 8.2062pt.
-LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 42.
+LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 20.
  (/usr/share/texlive/texmf-dist/tex/latex/newtx/ot1minntx.fd
 File: ot1minntx.fd 2023/09/09 v1.1 font definition file for OT1/minntx
 )
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 42.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 20.
  (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 42.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 20.
  (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 42.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 20.
  (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 8.27202pt on input line 42.
+(Font)              scaled to size 8.27202pt on input line 20.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 8.27202pt on input line 42.
-LaTeX Font Info:    Trying to load font information for U+mvs on input line 42.
+(Font)              scaled to size 8.27202pt on input line 20.
+LaTeX Font Info:    Trying to load font information for U+mvs on input line 20.
  (/usr/share/texlive/texmf-dist/tex/latex/marvosym/umvs.fd)
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 9.40002pt on input line 42.
+(Font)              scaled to size 9.40002pt on input line 20.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 8.46002pt on input line 42.
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 43.
+(Font)              scaled to size 8.46002pt on input line 20.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 21.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 10.29301pt on input line 47.
+(Font)              scaled to size 10.29301pt on input line 35.
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 13.53603pt on input line 47.
+(Font)              scaled to size 13.53603pt on input line 35.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.95pt on input line 36.
 
+Underfull \vbox (badness 5475) has occurred while \output is active []
 
-Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
-(lipsum)                'english' will be used instead.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 56.
+ (/usr/share/texlive/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
+)
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.95pt on input line 56.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 10.95pt on input line 56.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}
 
 
 
 
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc} <./tum/resources/orcid.pdf>] [2
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc} <./tum/resources/orcid.pdf>]
+LaTeX Font Info:    Trying to load font information for T1+newtxtt on input line 102.
+ (/usr/share/texlive/texmf-dist/tex/latex/newtxtt/t1newtxtt.fd
+File: t1newtxtt.fd 2020/02/15 Font definitions for T1/newtxtt.
+)
+LaTeX Font Info:    Font shape `T1/newtxtt/m/n' will be
+(Font)              scaled to size 11.60696pt on input line 102.
+ (./main.bbl [2{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtxtt/txttAec.enc}]) [3
 
 ] 
 enddocument/afterlastpage: lastpage setting LastPage.
@@ -1188,18 +1197,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 37709 strings out of 476129
- 777438 string characters out of 5793185
- 1948975 words of memory out of 5000000
- 59102 multiletter control sequences out of 15000+600000
- 612991 words of font info for 80 fonts, out of 8000000 for 9000
+ 37544 strings out of 476129
+ 771276 string characters out of 5793185
+ 1947975 words of memory out of 5000000
+ 58906 multiletter control sequences out of 15000+600000
+ 632457 words of font info for 112 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 140i,20n,135p,11025b,810s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on main.pdf (2 pages, 103752 bytes).
+ 140i,20n,135p,10929b,810s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtxtt/newtxtt.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on main.pdf (3 pages, 208807 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 182 PDF objects out of 1000 (max. 8388607)
+ 150 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 
